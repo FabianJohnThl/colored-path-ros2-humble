@@ -26,12 +26,10 @@ class ColoredPath(Node):
         # Parameters
         self.declare_parameter('colorizer', 'RM520N')                       # string to select a source for colorizing: {'RM520N', 'DUMMY'}
         self.declare_parameter('movement_min_distance', 1.0)                # Minimum distance to be moved on path before drawing/querying new actual value for colorizing
-        self.declare_parameter('path_in', 'path_in')                        # Name of first cloud to be mergerd and filtered
-        self.declare_parameter('marker_array_out', 'path_colored')          # Name of second cloud to be mergerd and filtered
 
         self.movement_min_distance = self.get_parameter('movement_min_distance').value
-        self.path_in = self.get_parameter('path_in').value
-        self.marker_array_out = self.get_parameter('marker_array_out').value
+        self.path_in = 'path_in'
+        self.marker_array_out = 'path_colored'
 
         if self.get_parameter('colorizer').value.lower() == 'rm520n':
             self.colorizer = Rm520nRsrpColorizer()
