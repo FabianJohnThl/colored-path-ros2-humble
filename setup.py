@@ -13,7 +13,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name, ['launch/col_pth_launch.py']),
     ],
-    py_modules=['col_pth/col_pth', 'col_pth/colorizer', 'col_pth/rm520n_rsrp_colorizer', 'col_pth/dummy_colorizer'],
+    #py_modules=['col_pth/col_pth', 'col_pth/colorizer', 'col_pth/rm520n_rsrp_colorizer', 'col_pth/dummy_colorizer'],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='FabianJohnTHL',
