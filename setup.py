@@ -5,7 +5,8 @@ package_name = 'col_pth'
 setup(
     name=package_name,
     version='1.0.0',
-    packages=find_packages(exclude=['test']),
+    #packages=find_packages(exclude=['test']),
+    packages=['col_pth', 'col_pth.rm520n_rsrp_colorizer', 'col_pth.colorizer', 'col_pth.dummy_colorizer'],
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
