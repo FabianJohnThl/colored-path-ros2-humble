@@ -14,7 +14,7 @@ setup(
         ('share/' + package_name, ['launch/col_pth_launch.py']),
     ],
     py_modules=['colorizer', 'rsrp_colorizer', 'dummy_colorizer'],
-    package_dir={'': 'col_pth'},
+    package_dir={'': ''},
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='FabianJohnTHL',
