@@ -66,6 +66,9 @@ class ColoredPath(Node):
         curr_pos = path_msg.poses[-1].pose.position
         if not self.last_marker:
             color = self.colorizer.query_current_color()
+            if not color:
+                self.get_logger("Color from colorizer is None. Returning.")
+                return
             self.last_marker = {'color': color, 'pos': curr_pos}
             return
         

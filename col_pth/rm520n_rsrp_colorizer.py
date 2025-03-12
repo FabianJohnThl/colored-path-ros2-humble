@@ -58,7 +58,7 @@ class Rm520nRsrpColorizer(Colorizer):
 
     def query_current_color(self):
         self.current_value = self.get_rsrp()
-        self.get_color_from_strength(self.current_value)
+        self.current_color = self.get_color_from_strength(self.current_value)
         return self.get_color()
 
     def get_color(self):
