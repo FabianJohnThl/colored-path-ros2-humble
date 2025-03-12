@@ -1,5 +1,5 @@
 import random
-from colorizer import Colorizer
+from .colorizer import Colorizer
 
 class DummyColorizer(Colorizer):
     def __init__(self):

@@ -1,6 +1,6 @@
 import rclpy
-from rm520n_rsrp_colorizer import Rm520nRsrpColorizer
-from dummy_colorizer import DummyColorizer
+from .rm520n_rsrp_colorizer import Rm520nRsrpColorizer
+from .dummy_colorizer import DummyColorizer
 from rclpy.node import Node
 from nav_msgs.msg import Path
 from visualization_msgs.msg import Marker, MarkerArray

@@ -1,4 +1,4 @@
-from colorizer import Colorizer
+from .colorizer import Colorizer
 import serial
 
 class Rm520nRsrpColorizer(Colorizer):
