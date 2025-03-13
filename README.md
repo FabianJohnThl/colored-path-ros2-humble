@@ -10,6 +10,7 @@ Package to publish a given path colored, depending on some measured values
 # Installation
 
 ```bash
+pip install pyserial
 cd ~/ros2_ws/src
 sudo rm -r colored-path-ros2-humble
 git clone https://github.com/FabianJohnThl/colored-path-ros2-humble.git
